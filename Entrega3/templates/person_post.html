@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Person</title>
+</head>
+<body>
+    <h1>Add Person</h1>
+    <ul>
+        <form method="POST" action="{% url 'add_person/' %}">
+            {% csrf_token %}
+            <input type="text" name="my_field">
+            <button type="submit">Submit</button>
+        </form>
+    </ul>
+</body>
+</html>
